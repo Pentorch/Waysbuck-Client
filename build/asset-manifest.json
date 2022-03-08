@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.339d2997.css",
+    "main.js": "/static/js/main.dc0f1189.js",
+    "static/media/img1.svg": "/static/media/img1.37078823231af588f29e3705d832a872.svg",
+    "static/media/detail-card.png": "/static/media/detail-card.e4c9e6ea2cc01018c8e4.png",
+    "static/media/Jumbotron.png": "/static/media/Jumbotron.6c404d241ee2f4ba8193.png",
+    "static/media/topingNew.png": "/static/media/topingNew.c0acce4dea0a1c30fa7d.png",
+    "static/media/toping6.png": "/static/media/toping6.8b564a8bb09f11ad0a6d.png",
+    "static/media/product2.png": "/static/media/product2.a09150985b2abcb0376c.png",
+    "static/media/product1.png": "/static/media/product1.0530e0151c3581653421.png",
+    "static/media/Rectangle.png": "/static/media/Rectangle.f2a3996d1e7f042bd935.png",
+    "static/media/product3.png": "/static/media/product3.f1da5f65444bfb5a772f.png",
+    "static/media/Avatar.png": "/static/media/Avatar.527ae1fc48fdf58231b7.png",
+    "static/media/profile.jpg": "/static/media/profile.05e5bd8580443fd1b294.jpg",
+    "static/media/Transaction.png": "/static/media/Transaction.21a121ec7415793759a1.png",
+    "static/media/card.png": "/static/media/card.ceef80f18f248459c861.png",
+    "static/media/toping5.png": "/static/media/toping5.903b7ecee341bd6eaeea.png",
+    "static/media/toping1.png": "/static/media/toping1.58c26c257d3be090180e.png",
+    "static/media/toping8.png": "/static/media/toping8.ae9d43ae2513a8c1ae56.png",
+    "static/media/toping2.png": "/static/media/toping2.cb0fd8862ac3377faffe.png",
+    "static/media/toping3.png": "/static/media/toping3.bc5b66274cefa522a46e.png",
+    "static/media/toping4.png": "/static/media/toping4.d0c804fc8917b71cb4cc.png",
+    "static/media/toping07.png": "/static/media/toping07.15e9f823259dbbdd4061.png",
+    "static/media/WaysBucks1.png": "/static/media/WaysBucks1.d91c20d456b5ea88558f.png",
+    "static/media/qr.svg": "/static/media/qr.1a703db5709882f95453eb82eed1a5ef.svg",
+    "static/media/cancel.svg": "/static/media/cancel.5e8e77a47b3b45b126613d95be09b46f.svg",
+    "static/media/attach.svg": "/static/media/attach.ae223693db2536447b29b97fa692fa57.svg",
+    "index.html": "/index.html",
+    "static/media/aprove.svg": "/static/media/aprove.ad2ae130278fb074e698c1e08a11f843.svg",
+    "main.339d2997.css.map": "/static/css/main.339d2997.css.map",
+    "main.dc0f1189.js.map": "/static/js/main.dc0f1189.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.339d2997.css",
+    "static/js/main.dc0f1189.js"
+  ]
+}
