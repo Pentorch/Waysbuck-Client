@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Ice Coffee Palm Sugar",
+    "price": 27000,
+    "img": "product01.png"
+  },
+  {
+    "id": 2,
+    "name": "Ice Coffee Green Tea",
+    "price": 31000,
+    "img": "product02.png"
+  },
+  {
+    "id": 3,
+    "name": "Hanami Latte",
+    "price": 29000,
+    "img": "product03.png"
+  },
+  {
+    "id": 4,
+    "name": "Clepon Coffee",
+    "price": 28000,
+    "img": "product04.png"
+  }
+]

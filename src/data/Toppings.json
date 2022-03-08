@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Bubble Tea Gelatin",
+    "price": 3000,
+    "imgUrl": "BubbleTeaGelatin.svg"
+  },
+  {
+    "id": 2,
+    "name": "Mango",
+    "price": 3000,
+    "imgUrl": "Mango.svg"
+  },
+  {
+    "id": 3,
+    "name": "Green Coconut",
+    "price": 3000,
+    "imgUrl": "GreenCoconut.svg"
+  },
+  {
+    "id": 4,
+    "name": "Boba Mango",
+    "price": 3000,
+    "imgUrl": "BobaMango.svg"
+  },
+  {
+    "id": 5,
+    "name": "Bill Berry Boba",
+    "price": 3000,
+    "imgUrl": "BillBerryBoba.svg"
+  },
+  {
+    "id": 6,
+    "name": "Kiwi Popping Pearl",
+    "price": 3000,
+    "imgUrl": "KiwiPoppingPearl.svg"
+  },
+  {
+    "id": 7,
+    "name": "Matcha Cantaloupe",
+    "price": 3000,
+    "imgUrl": "MatchaCantaloupe.svg"
+  },
+  {
+    "id": 8,
+    "name": "Strawberry Popping",
+    "price": 3000,
+    "imgUrl": "StrawberryPopping.svg"
+  }
+]
