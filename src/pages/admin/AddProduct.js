@@ -51,7 +51,7 @@ const AddDataProduct = () => {
       const formData = new FormData();
       formData.set("tittle", form.tittle);
       formData.set("price", form.price);
-      formData.set("image", preview);
+      formData.set("image", formData.image[0], formData.image[0].name);
 
       console.log(form);
 
