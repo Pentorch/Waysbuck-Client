@@ -24,6 +24,7 @@ import Home from "../../pages/Home";
 import EditProfile from "../../pages/user/EditProfile";
 // import Dashboard from "../../pages/admin/Dashboard";
 import NotFound from "../../pages/NotFound";
+import EditProduct from "../../pages/admin/EditProduct";
 
 // init token on axios every time the app is refreshed
 if (localStorage.token) {
@@ -81,8 +82,13 @@ const Routes = () => {
           <PrivateRoute exact path="/product/:id" component={Product} />
 
           {/* <PrivateAdminRoute exact path="/dashboard" component={Dashboard} /> */}
-          <PrivateAdminRoute exact path="/addProduct" component={AddProduct} />
-          <PrivateAdminRoute exact path="/addTopping" component={AddTopping} />
+          <PrivateAdminRoute exact path="/addproduct" component={AddProduct} />
+          <PrivateAdminRoute exact path="/addtopping" component={AddTopping} />
+          <PrivateAdminRoute
+            exact
+            path="/editProduct"
+            component={EditProduct}
+          />
 
           <PrivateAdminRoute
             exact

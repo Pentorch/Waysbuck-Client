@@ -63,7 +63,7 @@ const Admin = (props) => {
         </Nav.Link>
         <Nav.Link
           as={Link}
-          to="/addtopping"
+          to="/editproduct"
           className="text-overide-admin fw-bold"
         >
           complain

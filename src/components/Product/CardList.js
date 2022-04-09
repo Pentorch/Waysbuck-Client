@@ -8,7 +8,6 @@ const CardList = ({ data, product, handleAddProduct }) => {
           <CardProduct
             item={item}
             Product={product}
-            image={data.image}
             handleClick={handleAddProduct}
           />
         </Col>
