@@ -188,6 +188,16 @@
   position: absolute;
 }
 
+@media screen and (max-width: 600px) {
+  .content-img-jumbotron {
+    display: block;
+    top: 90%;
+    width: 40%;
+    left: 35%;
+    position: absolute;
+  }
+}
+
 .bg-red {
   background-color: #bd0707;
 }
@@ -779,13 +789,3 @@ hr {
 //     margin-left: 0;
 //   }
 // }
-
-@media screen and (max-width: 600px) {
-  .content-img-jumbotron {
-    display: block;
-    top: 90%;
-    width: 40%;
-    left: 35%;
-    position: absolute;
-  }
-}
