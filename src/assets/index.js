@@ -37,8 +37,10 @@ import addtopping from "../assets/images/add-t.png";
 import attact from "../assets/images/attach.svg";
 import img1 from "../assets/images/img1.svg";
 import img2 from "../assets/images/topingNew.png";
+import review from "../assets/images/reviews.png";
 
 export {
+  review,
   img1,
   img2,
   attact,

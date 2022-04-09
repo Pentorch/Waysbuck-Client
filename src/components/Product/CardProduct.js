@@ -28,7 +28,12 @@ const CardProduct = ({ item }) => {
   };
   return (
     <>
-      <div style={{ width: "100%" }} data-aos="flip-up" data-aos-duration="500">
+      <div
+        className="grid"
+        style={{ width: "100%" }}
+        data-aos="flip-up"
+        data-aos-duration="500"
+      >
         <Row>
           <Col key={item.id} id={item.id} className="mb-4">
             <Card
