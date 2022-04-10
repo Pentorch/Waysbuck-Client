@@ -84,6 +84,7 @@ function EditProfile() {
                 />
               ) : profile.image ? (
                 <img
+                  name="image"
                   src={profile.image}
                   alt="preview"
                   className="box-image"
