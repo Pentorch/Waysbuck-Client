@@ -68,7 +68,7 @@ function EditProfile() {
       console.log(error);
     }
   };
-  const path = "http://localhost:5000/uploads/";
+
   return (
     <Container>
       <Row>
@@ -84,7 +84,7 @@ function EditProfile() {
                 />
               ) : profile.image ? (
                 <img
-                  src={path + profile.image}
+                  src={profile.image}
                   alt="preview"
                   className="box-image"
                   height={"460px"}
