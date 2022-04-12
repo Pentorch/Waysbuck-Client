@@ -37,13 +37,13 @@ const Jumbotron = () => {
                         alt=""
                         className="img-fluid img-slice-four"
                       />
-                      <h1
+                      <h2
                         className="text-jumbotron"
                         data-aos="zoom-in"
                         data-aos-duration="2000"
                       >
                         WAYSBUCKS
-                      </h1>
+                      </h2>
                       <p data-aos="zoom-in" data-aos-duration="2000">
                         Things are changing, but we’re still here for you
                       </p>
