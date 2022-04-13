@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Form, Button, Image, Col, Row, Container } from "react-bootstrap";
 import { API } from "../../config/server";
-import { attact, profileNav } from "../../assets";
+import { attact } from "../../assets";
 import Avatar from "react-avatar";
 
 function EditProfile() {

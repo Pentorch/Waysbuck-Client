@@ -176,6 +176,22 @@
   width: 90%;
   height: 380px;
 }
+
+@media screen and (max-width: 768px) {
+  .section .card {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    // margin-top: 100px;
+
+    width: 100%;
+    height: 380px;
+  }
+}
+
 .content-join {
   margin-top: 10px;
   align-items: center;
