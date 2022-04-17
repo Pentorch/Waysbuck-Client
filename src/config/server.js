@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const API = axios.create({
-  baseURL: "https://waysbucks-api-pentorch.herokuapp.com/api/v1/",
+  baseURL: "https://waysbucks-api-sumbar.herokuapp.com/api/v1/",
 });
 
 export const setAuthToken = (token) => {
