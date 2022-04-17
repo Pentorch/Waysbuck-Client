@@ -31,7 +31,7 @@ const User = (props) => {
   }, [state]);
 
   console.log("Len", state.cart.length);
-  // const path = "http://localhost:5000/uploads/";
+  const path = "https://res.cloudinary.com/daxedhulb/image/upload/";
   return (
     <>
       <Nav.Link onClick={goToCart}>
@@ -46,7 +46,7 @@ const User = (props) => {
         <Dropdown.Toggle as={Nav.Link} style={{ marginRight: "10px" }}>
           {profile.image ? (
             <Image
-              src={profile.image}
+              src={path + profile.image}
               alt="profile"
               style={{
                 width: "70px",

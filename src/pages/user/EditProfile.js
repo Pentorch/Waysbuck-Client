@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { Form, Button, Image, Col, Row, Container } from "react-bootstrap";
 import { API } from "../../config/server";
-import { attact } from "../../assets";
+import { attact, profileNav } from "../../assets";
 import Avatar from "react-avatar";
 
 function EditProfile() {
@@ -68,7 +68,7 @@ function EditProfile() {
       console.log(error);
     }
   };
-  // const path = "http://localhost:5000/uploads/";
+  const path = "https://res.cloudinary.com/daxedhulb/image/upload/";
   return (
     <Container>
       <Row>
@@ -84,7 +84,7 @@ function EditProfile() {
                 />
               ) : profile.image ? (
                 <img
-                  src={profile.image}
+                  src={path + profile.image}
                   alt="preview"
                   className="box-image"
                   height={"460px"}

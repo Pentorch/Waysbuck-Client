@@ -19,10 +19,10 @@ function Profile() {
       try {
         const getProfile = await API.get("/profile");
         const getTransaction = await API.get("/cart");
-        console.log(getProfile);
+        //   console.log(getProfile);
         //   console.log("Transaction",getTransaction);
         setProfile(getProfile.data.data.users);
-        console.log("profile", profile);
+        // console.log("profile",profile)
         setTransactions(getTransaction.data.data.transactions);
       } catch (error) {
         console.log(error);
@@ -61,7 +61,7 @@ function Profile() {
       setWait(false);
     }
   };
-  // const path = "http://localhost:5000/uploads/";
+  const path = "https://res.cloudinary.com/daxedhulb/image/upload/";
   const months = [
     "January",
     "February",
@@ -97,7 +97,7 @@ function Profile() {
             <Col md={5}>
               {profile.image ? (
                 <img
-                  src={profile.image}
+                  src={path + profile.image}
                   alt="profile"
                   className="box-image img-fluid"
                   height={"160px"}
@@ -150,7 +150,7 @@ function Profile() {
                               <li className="mb-3" key={i}>
                                 <div className="d-flex align-items-center ">
                                   <img
-                                    src={order.products.image}
+                                    src={path + order.products.image}
                                     alt="product"
                                     className="box-image img-fluid"
                                     style={{
