@@ -7,7 +7,7 @@ const ViewPayment = ({ image }) => {
   const showModal = () => setModal(true);
   const closeModal = () => setModal(false);
 
-  const path = "http://localhost:5000/uploads/";
+  const path = "https://res.cloudinary.com/daxedhulb/image/upload/";
 
   return (
     <>
