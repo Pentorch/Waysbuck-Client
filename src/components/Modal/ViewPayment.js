@@ -18,7 +18,7 @@ const ViewPayment = ({ image }) => {
         <Modal.Body>
           <h5 className="text-center my-3 text-danger">Attachment</h5>
           <center>
-            <img src={path + image} alt="payment" />
+            <img src={path + image} alt="payment" className="img-fluid" />
           </center>
           <div className="d-flex justify-content-around">
             <Button className="btn btn-danger-custom mt-4" onClick={closeModal}>
