@@ -27,14 +27,19 @@ export default function Complain() {
   const [state] = useContext(AppContext);
 
   useEffect(() => {
-    socket = io("https://waysbucks-api-sumbar.herokuapp.com", {
-      auth: {
-        token: localStorage.getItem("token"),
-      },
-      query: {
-        id: state.user.id,
-      },
-    });
+    socket = io(
+      process.env.SOCKET_SERVER ||
+        "https://waysbucks-api-sumbar.herokuapp.com/" ||
+        "http://localhost:5000",
+      {
+        auth: {
+          token: localStorage.getItem("token"),
+        },
+        query: {
+          id: state.user.id,
+        },
+      }
+    );
 
     // define corresponding socket listener
     socket.on("new message", () => {
