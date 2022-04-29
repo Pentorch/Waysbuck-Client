@@ -26,6 +26,8 @@ import EditProfile from "../../pages/user/EditProfile";
 import NotFound from "../../pages/NotFound";
 import EditProduct from "../../pages/admin/EditProduct";
 import Footer from "../../components/Footer/Footer";
+import Complain from "../../pages/user/Complain";
+import ComplainAdmin from "../../pages/admin/ComplainAdmin";
 
 // init token on axios every time the app is refreshed
 if (localStorage.token) {
@@ -76,7 +78,7 @@ const Routes = () => {
 
         <Switch>
           <Route exact path="/" component={Home} />
-
+          <PrivateRoute exact path="/complain" component={Complain} />
           <PrivateRoute exact path="/cart" component={Cart} />
           <PrivateRoute exact path="/profile" component={Profile} />
           <PrivateRoute exact path="/editprofile" component={EditProfile} />
@@ -84,6 +86,11 @@ const Routes = () => {
 
           {/* <PrivateAdminRoute exact path="/dashboard" component={Dashboard} /> */}
           <PrivateAdminRoute exact path="/addProduct" component={AddProduct} />
+          <PrivateAdminRoute
+            exact
+            path="/complain-admin"
+            component={ComplainAdmin}
+          />
           <PrivateAdminRoute
             exact
             path="/editproduct"

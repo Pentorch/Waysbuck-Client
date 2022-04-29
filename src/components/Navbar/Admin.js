@@ -39,36 +39,6 @@ const Admin = (props) => {
   return (
     <div>
       <Nav>
-        <Nav.Link
-          as={Link}
-          to="/transaction"
-          className="text-overide-admin fw-bold"
-        >
-          Transaction
-        </Nav.Link>
-
-        <Nav.Link
-          as={Link}
-          to="/addproduct"
-          className="text-overide-admin fw-bold"
-        >
-          Product
-        </Nav.Link>
-        <Nav.Link
-          as={Link}
-          to="/addtopping"
-          className="text-overide-admin fw-bold"
-        >
-          Topping
-        </Nav.Link>
-        <Nav.Link
-          as={Link}
-          to="/editproduct"
-          className="text-overide-admin fw-bold"
-        >
-          complain
-        </Nav.Link>
-
         <Dropdown>
           <Dropdown.Toggle
             as={Nav.Link}

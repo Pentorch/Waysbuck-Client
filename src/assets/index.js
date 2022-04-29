@@ -38,8 +38,12 @@ import attact from "../assets/images/attach.svg";
 import img1 from "../assets/images/img1.svg";
 import img2 from "../assets/images/topingNew.png";
 import review from "../assets/images/reviews.png";
+import chat from "../assets/images/chat-user.png";
+import ProfileUserChat from "../assets/images/blank-profile.png";
 
 export {
+  ProfileUserChat,
+  chat,
   review,
   img1,
   img2,

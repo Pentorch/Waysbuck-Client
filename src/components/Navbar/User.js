@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Dropdown, Nav, Image } from "react-bootstrap";
-import { keranjang, logout, ProfileUser } from "../../assets";
+import { keranjang, logout, ProfileUser, chat } from "../../assets";
 import { AppContext } from "../../context/AppContext";
 import { useHistory } from "react-router-dom";
 import { API } from "../../config/server";
@@ -15,6 +15,7 @@ const User = (props) => {
   console.log("profile", profile);
   const goToProfile = () => router.push("/profile");
   const goToCart = () => router.push("/cart");
+  const goToChat = () => router.push("/complain");
 
   const getUser = async () => {
     try {
@@ -43,7 +44,11 @@ const User = (props) => {
         )}
       </Nav.Link>
       <Dropdown as={Nav.Item} className="ml-3">
-        <Dropdown.Toggle as={Nav.Link} style={{ marginRight: "10px" }}>
+        <Dropdown.Toggle
+          as={Nav.Link}
+          style={{ marginRight: "10px" }}
+          className="navbar-user"
+        >
           {profile.image ? (
             <Image
               src={path + profile.image}
@@ -77,7 +82,11 @@ const User = (props) => {
             <Image src={ProfileUser} alt="profile" className="img-icon mr-3" />
             Profile
           </Dropdown.Item>
-          <Dropdown.Divider />
+          <Dropdown.Item onClick={goToChat}>
+            <Image src={chat} alt="chat" className="img-icon me-1 img-fluid" />
+            Chat Admin
+          </Dropdown.Item>
+          <Dropdown.Divider style={{ width: "100%" }} />
           <Dropdown.Item onClick={props.handleLogout}>
             <Image src={logout} alt="logout" className="img-icon mr-3" />
             Logout

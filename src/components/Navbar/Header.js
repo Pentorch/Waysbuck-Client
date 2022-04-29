@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Navbar, Container, Nav } from "react-bootstrap";
 
@@ -9,6 +9,17 @@ import { AppContext } from "../../context/AppContext";
 import { logo } from "../../assets";
 
 const Header = () => {
+  const [nav, setNav] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setNav(true);
+    } else {
+      setNav(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
   const router = useHistory();
   const [state, dispatch] = useContext(AppContext);
 
@@ -25,7 +36,12 @@ const Header = () => {
 
   return (
     <>
-      <Navbar collapseOnSelect expand="lg" className="fixed-top" bg="white">
+      <Navbar
+        id="Navbar"
+        collapseOnSelect
+        expand="lg"
+        className={nav ? "nav active" : "nav"}
+      >
         <Container className="d-flex justify-content-between mt-3">
           <Navbar.Brand>
             <img src={logo} onClick={hadleHome} alt="Waysbucks" width="70px" />
