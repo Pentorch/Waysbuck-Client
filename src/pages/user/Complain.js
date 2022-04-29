@@ -29,7 +29,7 @@ export default function Complain() {
   useEffect(() => {
     socket = io(
       process.env.SOCKET_SERVER ||
-        "https://waysbucks-api-sumbar.herokuapp.com/" ||
+        "https://waysbucks-api-sumbar.herokuapp.com/api/v1/" ||
         "http://localhost:5000",
       {
         auth: {
