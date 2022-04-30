@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Dropdown, Nav } from "react-bootstrap";
-import { addproduct, addtopping, keranjang, logout } from "../../assets";
+import { addproduct, addtopping, keranjang, logout, chat } from "../../assets";
 import { AppContext } from "../../context/AppContext";
 import Avatar from "react-avatar";
 import { API } from "../../config/server";
@@ -34,6 +34,9 @@ const Admin = (props) => {
   };
   const goToAddTopping = () => {
     router.push("/addtopping");
+  };
+  const goToChatAdmin = () => {
+    router.push("/complain-admin");
   };
 
   return (
@@ -69,6 +72,10 @@ const Admin = (props) => {
             <Dropdown.Item onClick={goToAddTopping} className="mb-3">
               <img src={addtopping} alt="profile" className="img-icon mr-3" />
               Add Topping
+            </Dropdown.Item>
+            <Dropdown.Item onClick={goToChatAdmin} className="mb-3">
+              <img src={chat} alt="profile" className="img-icon me-1" />
+              Chat User
             </Dropdown.Item>
             <hr style={{ width: "100%", height: "1px" }} />
             <Dropdown.Item onClick={props.handleLogout}>
