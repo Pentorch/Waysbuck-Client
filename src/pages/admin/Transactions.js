@@ -92,7 +92,10 @@ const Transactions = () => {
   return loading || !transactions || transactions.length < 1 ? (
     <Loading />
   ) : (
-    <div className="container">
+    <div
+      className="container table-responsive"
+      style={{ marginBottom: "100px" }}
+    >
       <h3 className="header3">Income Transaction</h3>
       <table
         className="table table-bordered"
