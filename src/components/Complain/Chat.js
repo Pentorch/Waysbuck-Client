@@ -51,7 +51,7 @@ export default function Chat({ contact, user, messages, sendMessage }) {
       ) : (
         <div
           style={{ height: "89.5vh" }}
-          className="h4 d-flex justify-content-center align-items-center"
+          className="h4 d-flex justify-content-center align-items-center content-message-chat"
         >
           No Message
         </div>

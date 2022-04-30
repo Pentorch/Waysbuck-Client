@@ -177,7 +177,7 @@
   height: 380px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .section .card {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -197,6 +197,13 @@
   align-items: center;
   box-sizing: border-box;
 }
+@media screen and (max-width: 768px) {
+  .content-join {
+    margin-top: 50px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+}
 
 .content-img-jumbotron {
   top: 40px;
@@ -207,10 +214,12 @@
 
 @media screen and (max-width: 600px) {
   .content-img-jumbotron {
+    border-radius: 100%;
     display: block;
-    top: 90%;
+    top: -15%;
     width: 40%;
-    left: 35%;
+    height: 40%;
+    left: 30%;
     position: absolute;
   }
 }
@@ -250,6 +259,18 @@
   font-size: 50px;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .text-jumbotron {
+    // font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 .icons-img {
@@ -738,96 +759,15 @@ hr {
   }
 }
 
-// .grid {
-//   display: grid;
-//   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-// }
-
-// @media screen and (max-width: 600px) {
-//   .grid {
-//     display: flex; /* mengubah ke mode flexbox */
-//     flex-wrap: wrap; /* mengatur item flexbox dapat diwrap */
-//     flex-direction: row; /* Mengatur arah item ke row */
-//     justify-content: center;
-//   }
-//   .grid {
-//     margin: 150px auto;
-//     padding: auto 120px;
-//     box-sizing: border-box;
-//     flex-grow: 1; /* mengatur setiap item flexbox dapat melebar 1 bagian dari total item*/
-//     flex-shrink: 1;
-//   }
-// }
-
-// .sidebar {
-//   margin: 0;
-//   padding: 0;
-//   width: 100%;
-//   background-color: #f1f1f1;
-//   position: fixed;
-//   height: 100%;
-//   overflow: auto;
-// }
-
-// .sidebar a {
-//   display: block;
-//   color: black;
-//   padding: 16px;
-//   text-decoration: none;
-// }
-
-// .sidebar a.active {
-//   background-color: #04aa6d;
-//   color: white;
-// }
-
-// .sidebar a:hover:not(.active) {
-//   background-color: #555;
-//   color: white;
-// }
-
-// div.content {
-//   margin-left: 200px;
-//   padding: 1px 16px;
-//   height: 1000px;
-// }
-
-// @media screen and (max-width: 700px) {
-//   .sidebar {
-//     width: 100%;
-//     height: auto;
-//     position: relative;
-//   }
-//   .sidebar a {
-//     float: left;
-//   }
-//   div.content {
-//     margin-left: 0;
-//   }
-// }
-
-// @media screen and (max-width: 400px) {
-//   .sidebar a {
-//     text-align: center;
-//     float: none;
-//   }
-// }
-
 .section-stats {
   margin-top: 70px;
-
-  // background-color: #fff;
-  // border: 1px solid #000000;
   border-radius: 20px;
-  // padding: 1px 25%;
   padding-left: 10%;
   margin: 1px;
   border: 1px solid #b8b7b7;
 
   .stats-detail {
     padding-top: 15px;
-
-    // background: rgb(0, 0, 0);
     padding-left: 40px;
 
     .num {
@@ -876,11 +816,6 @@ hr {
 .content-footer {
   margin-bottom: 10px;
 }
-// @media screen and (max-width: 600px) {
-//   .content-footer {
-//     text-align: center;
-//   }
-// }
 
 .grid {
   display: grid;
@@ -1041,8 +976,9 @@ nav.active {
 @media screen and (max-width: 600px) {
   .content-chat-global {
     margin-top: 100px;
-    margin-left: -10px;
+    margin-left: -2px;
     margin-right: -20px;
+    margin-bottom: 200px;
   }
 }
 
@@ -1060,6 +996,19 @@ nav.active {
 @media screen and (max-width: 600px) {
   #chat-messages {
     background-attachment: scroll;
-    margin-top: -400px;
+    margin-top: -450px;
+  }
+}
+
+.content-message-chat {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .content-message-chat {
+    background-attachment: scroll;
+    margin-top: -500px;
   }
 }
